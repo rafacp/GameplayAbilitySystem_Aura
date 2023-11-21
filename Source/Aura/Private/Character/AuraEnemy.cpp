@@ -5,6 +5,7 @@
 
 void AAuraEnemy::HightlightActor()
 {
+	
 }
 
 void AAuraEnemy::UnHighlightActor()
