@@ -34,9 +34,9 @@ UAnimMontage* AAuraCharacterBase::GetHitReactMontage_Implementation()
 	return HitReactMontage;
 }
 
-UAnimMontage* AAuraCharacterBase::GetAttackMontage_Implementation()
+TArray<FTaggedMontage> AAuraCharacterBase::GetAttackMontages_Implementation()
 {
-	return AttackMontage;
+	return AttackMontages;
 }
 
 void AAuraCharacterBase::Die()
