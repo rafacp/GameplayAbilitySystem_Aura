@@ -4,6 +4,8 @@
 #include "UI/WidgetController/OverlayWidgetController.h"
 #include "AbilitySystem/AuraAttributeSet.h"
 #include "AbilitySystem/AuraAbilitySystemComponent.h"
+#include "AbilitySystem/AuraAttributeSet.h"
+#include "AbilitySystem/Data/AbilityInfo.h"
 
 
 void UOverlayWidgetController::BroadcastInitialValues()
@@ -69,6 +71,13 @@ void UOverlayWidgetController::OnInitializedStartupAbilities(UAuraAbilitySystemC
 {
 	if (!AuraAbilitySystemComponent->bStartupAbilitiesGiven) return;
 
-
+	FForEachAbility BroadcastDelegate;
+	BroadcastDelegate.BindLambda([this](const FGameplayAbilitySpec& AbilitySpec) 
+		{
+			FAuraAbilityInfo Info = AbilityInfo->FindAbilityInfoForTag(UAuraAbilitySystemComponent::GetAbilityTagFromSpec(AbilitySpec));
+			Info.InputTag = UAuraAbilitySystemComponent::GetInputTagFromSpec(AbilitySpec);
+			AbilityInfoDelegate.Broadcast(Info);
+		});
+	AuraAbilitySystemComponent->ForEachAbility(BroadcastDelegate);
 }
 
