@@ -34,7 +34,7 @@ struct FAuraAbilityInfo
 	TObjectPtr<const UMaterialInterface> BackgroundMaterial = nullptr;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	int32 LevelRequirement = 0;
+	int32 LevelRequirement = 1;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
 	TSubclassOf<UGameplayAbility> Ability;
