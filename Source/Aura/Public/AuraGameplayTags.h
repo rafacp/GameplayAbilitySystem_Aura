@@ -49,16 +49,30 @@ public:
 	FGameplayTag InputTag_4;
 	FGameplayTag InputTag_Passive_1;
 	FGameplayTag InputTag_Passive_2;
+	
 	//Damage types
 	FGameplayTag Damage;
 	FGameplayTag Damage_Fire;
 	FGameplayTag Damage_Lightning;
 	FGameplayTag Damage_Arcane;
 	FGameplayTag Damage_Physical;
+	
 	//Abilities
 	FGameplayTag Abilities_Attack;
 	FGameplayTag Abilities_Summon;
+	FGameplayTag Abilities_HitReact;
+	//Abilities Status
+	FGameplayTag Abilities_Status_Locked;
+	FGameplayTag Abilities_Status_Eligible;
+	FGameplayTag Abilities_Status_Unlocked;
+	FGameplayTag Abilities_Status_Equipped;
+	//Ability Types
+	FGameplayTag Abilities_Type_Offensive;
+	FGameplayTag Abilities_Type_Passive;
+	FGameplayTag Abilities_Type_None;
+	//Fire Firebolt Tag
 	FGameplayTag Abilities_Fire_Firebolt;
+	
 	//Cooldown Tags
 	FGameplayTag Cooldown_Fire_Firebolt;
 	//Combat Sockets
