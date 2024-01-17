@@ -61,6 +61,7 @@ public:
 	FGameplayTag Abilities_Attack;
 	FGameplayTag Abilities_Summon;
 	FGameplayTag Abilities_HitReact;
+	FGameplayTag Abilities_None; //like a nullpointer for abilities
 	//Abilities Status
 	FGameplayTag Abilities_Status_Locked;
 	FGameplayTag Abilities_Status_Eligible;
