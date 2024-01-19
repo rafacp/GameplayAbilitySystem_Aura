@@ -96,7 +96,7 @@ void UOverlayWidgetController::OnXPChanged(int32 NewXP)
 	}
 }
 
-void UOverlayWidgetController::OnAbilityEquipped(const FGameplayTag& AbilityTag, const FGameplayTag& Status, const FGameplayTag& Slot, const FGameplayTag& PreviousSlot)
+void UOverlayWidgetController::OnAbilityEquipped(const FGameplayTag& AbilityTag, const FGameplayTag& Status, const FGameplayTag& Slot, const FGameplayTag& PreviousSlot) const
 {
 	const FAuraGameplayTags& GameplayTags = FAuraGameplayTags::Get();
 
