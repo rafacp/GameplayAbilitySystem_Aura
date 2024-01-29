@@ -48,6 +48,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly)
 	TObjectPtr<UNiagaraComponent> LevelUpNiagaraComponent;
 
+	virtual void OnRep_Stunned();
+
 private:
 	
 	UPROPERTY(VisibleAnywhere)
