@@ -85,7 +85,11 @@ public:
 	//Aura Spells
 	FGameplayTag Abilities_Fire_Firebolt;
 	FGameplayTag Abilities_Lightning_Electrocute;
-	
+	//Aura Passive Spells
+	FGameplayTag Abilities_Passive_HaloOfProtection;
+	FGameplayTag Abilities_Passive_LifeSiphon;
+	FGameplayTag Abilities_Passive_ManaSiphon;
+	 
 	//Cooldown Tags
 	FGameplayTag Cooldown_Fire_Firebolt;
 	//Combat Sockets
