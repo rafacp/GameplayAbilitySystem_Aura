@@ -91,7 +91,7 @@ public:
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable)
 	ECharacterClass GetCharacterClass();
 
-	virtual FOnASCRegistered GetOnASCRegisteredDelegate() = 0; //pure virtual (requires implementation)
+	virtual FOnASCRegistered& GetOnASCRegisteredDelegate() = 0; //pure virtual (requires implementation)
 	virtual FOnDeathSignature& GetOnDeathDelegate() = 0; //pure virtual (requires implementation)
 
 	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable)
