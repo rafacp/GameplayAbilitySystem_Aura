@@ -12,11 +12,8 @@ APointCollection::APointCollection()
 
 	Pt_0 = CreateDefaultSubobject<USceneComponent>("Pt_0");
 	ImmutablePts.Add(Pt_0);
-	if (!SetRootComponent(Pt_0)) 
-	{
-		UE_LOG(LogAura, Error, TEXT("Setting Pt_0 as root component failed!"));
-	}
-
+	SetRootComponent(Pt_0);
+	
 	Pt_1 = CreateDefaultSubobject<USceneComponent>("Pt_1");
 	ImmutablePts.Add(Pt_1);
 	Pt_1->SetupAttachment(GetRootComponent());
