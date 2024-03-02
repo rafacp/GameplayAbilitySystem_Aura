@@ -84,6 +84,7 @@ public:
 	FGameplayTag Abilities_Type_None;
 	//Aura Spells
 	FGameplayTag Abilities_Fire_Firebolt;
+	FGameplayTag Abilities_Fire_FireBlast;
 	FGameplayTag Abilities_Lightning_Electrocute;
 	FGameplayTag Abilities_Arcane_ArcaneShards;
 	//Aura Passive Spells
