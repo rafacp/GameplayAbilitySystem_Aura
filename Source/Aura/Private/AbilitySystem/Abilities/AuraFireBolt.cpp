@@ -11,7 +11,7 @@
 
 FString UAuraFireBolt::GetDescription(int32 Level)
 {
-	const float ScaledDamage = Damage.GetValueAtLevel(Level);
+	const int32 ScaledDamage = Damage.GetValueAtLevel(Level);
 	const float ManaCost = FMath::Abs(GetManaCost(Level));
 	const float Cooldown = GetCooldown(Level);
 
@@ -58,7 +58,7 @@ FString UAuraFireBolt::GetDescription(int32 Level)
 FString UAuraFireBolt::GetNextLevelDescription(int32 Level)
 {
 	Level += 1;//next level
-	const float ScaledDamage = Damage.GetValueAtLevel(Level);
+	const int32 ScaledDamage = Damage.GetValueAtLevel(Level);
 	const float ManaCost = FMath::Abs(GetManaCost(Level));
 	const float Cooldown = GetCooldown(Level);
 	
