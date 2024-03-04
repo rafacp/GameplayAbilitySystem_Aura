@@ -22,7 +22,7 @@ void AAuraFireBall::OnSphereOverlap(UPrimitiveComponent* OverlappedComponent, AA
 			const FVector DeathImpulse = GetActorForwardVector() * DamageEffectParams.DeathImpulseMagnitude;
 			DamageEffectParams.DeathImpulse = DeathImpulse;
 
-			//No Knockback
+			//No Knockback at first
 			DamageEffectParams.KnockbackForce = FVector::ZeroVector;
 			
 			DamageEffectParams.TargetAbilitySystemComponent = TargetASC;
